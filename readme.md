@@ -1,7 +1,16 @@
-Bitworse AA ヽ(´ω｀)ノ v0 (2026)
+Bitworse AA ヽ(´ω｀)ノ v0 (2026) 
 =============================
-I'm not ready yet! Stop Looking! 
+I'm not ready yet! Stop Looking!\
 This'll be something great! I hope...
+
+Progress
+------------------------------
+The Bare Minimum [=====] 100% - Complete!  
+Misc Edits [==・・・] 40% - started a bit...  
+Adding Symbols [・・・・・] 0% - i haven't started lmao  
+Adding Templates [・・・・・] 0% - i haven't started lmao  
+Styling [====・] 80% - i think i'm finished but there's probably something
+
 
 License\
 under the original license! see below

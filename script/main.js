@@ -1,13 +1,13 @@
-var fontSize = window.localStorage.getItem('matari-fontSize');
+var fontSize = window.localStorage.getItem('matari-font');
 
 //document.getElementById("infoSection").addEventListener("click", displayDate);
 
 window.onload = function() {
-  if (fontSize === 'small') {
-    document.body.classList.add('smallFont');
+  if (fontSize === 'pgothic') {
+    document.body.classList.add('MSPGothic');
   }
 
   else {
-    document.body.classList.remove('smallFont');
+    document.body.classList.remove('MSPGothic');
   }
 }

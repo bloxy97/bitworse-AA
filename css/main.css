@@ -1,21 +1,21 @@
 :root {
-  --bg-main: #007f7f;
-  --fg-main: #ffffff;
+  --bg-main: #efefef;
+  --fg-main: #000;
   --fg-alt: #99ff99;
-  --link: #eeffee;
-  --link-v: #dddddd;
+  --link: #FFF;
+  --link-v: #999;
   --link-a: #ff0000;
-  --bg-box: #004040;
-  --bg-box-transparent: #00101080;
-  --border-dark: #006060;
-  --border-light: #00a0a0;
-  --border-btn-dark: #003030;
-  --border-btn-light: #009090;
-  --bg-img: url("../img/bg_mid.png");
+  --bg-box: #efefef;
+  --bg-box-transparent: #cfca;
+  --border-dark: #aaa;
+  --border-light: #ffffff;
+  --border-btn-dark: #aaa; /* omg like aa? */
+  --border-btn-light: #ffffff;
+  --bg-img: url("../img/dqn.gif");
   --bg-img-write: url("../img/bg_main.png");
   --bg-img-write-small: url("../img/bg_main_small.png");
-  --bg-button: #005050;
-  --outline: #00dddd;
+  --bg-button: #efefef;
+  --outline: #000000;
 }
 
 @font-face {
@@ -30,6 +30,14 @@
   src: local("IPAMonaPGothic"),
     url("../fonts/IPAMonaPGothic.woff2") format("woff2"),
     url("../fonts/IPAMonaPGothic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Saitamaar";
+  src: local("Satimaar"), /* why would you have this already? */
+    url("/fonts/Saitamaar.woff2") format("woff2"),
+    url("/fonts/Saitamaar.woff") format("woff");
+  font-display: swap;
 }
 
 html {
@@ -64,12 +72,16 @@ body {
   min-height: 100vh;
 }
 
-.smallFont {
-  font-size: 12px;
+.MSPGothic {
+  font-family: MS PGothic, "Saitamaar", "IPAMonaPGothic", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
-.smallFont #writeBox {
-  background-image: var(--bg-img-write-small);
+.MSPGothic #writeBox {
+  font-family: MS PGothic, "Saitamaar", "IPAMonaPGothic", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 a {
@@ -164,6 +176,10 @@ h1 {
     monospace;
 }
 
+.aa2 {
+  font-family: MS PGothic, "Satimaar", "IPAMonaPGothic", sans-serif;
+}
+
 .links {
   display: inline-block;
   margin: 0;
@@ -172,13 +188,15 @@ h1 {
 }
 
 summary {
-  background-color: var(--bg-main);
-  border: 3px solid;
+  background-color: #CCFFCC;
+  border: 1px outset #FFF !important;
+  outline: 1px inset #FFF;
+  outline-offset: -6px;
   border-top-color: var(--border-light);
   border-left-color: var(--border-light);
   border-bottom-color: var(--border-dark);
   border-right-color: var(--border-dark);
-  padding: 2px 4px;
+  padding: 4px 8px;
   margin-top: 8px;
   cursor: pointer;
   user-select: none;
@@ -218,7 +236,9 @@ summary {
 #writeBox {
   background-color: var(--bg-box);
   color: var(--fg-main);
-  border: 3px solid;
+  border: 1px outset #FFF !important;
+  outline: 1px inset #FFF;
+  outline-offset: -6px;
   border-top-color: var(--border-dark);
   border-left-color: var(--border-dark);
   border-bottom-color: var(--border-light);
@@ -245,6 +265,7 @@ summary {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: min-content;
+  padding: 5px;
 }
 
 .tablinks {
@@ -304,6 +325,7 @@ summary {
 #page15,
 #page16 {
   width: 100%;
+  padding: 5px;
 }
 
 #page2,
@@ -389,8 +411,8 @@ summary {
   resize: none;
   white-space: pre;
   overflow-wrap: normal;
-  padding: 2px 0;
-  margin: 0;
+  padding: 5px;
+  margin: 0 5px;
 }
 
 #writeBox:focus {

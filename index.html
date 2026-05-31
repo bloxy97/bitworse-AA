@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A browser-based ASCII art editor for Ayashii World-type bulletin boards.">
-  <title>Mattari AA</title>
+  <title>Bitworse AA</title>
   <link href="./css/main.css" rel="stylesheet" type="text/css">
   <link href="./css/honten.css" rel="alternate stylesheet" type="text/css" title="Honten">
   <link href="./css/nazo.css" rel="alternate stylesheet" type="text/css" title="Nazo">
@@ -14,7 +14,7 @@
   <script src="./script/insert.js"></script>
   <script src="./script/tabs.js"></script>
   <script src="./script/main.js"></script>
-  <script src="./script/fontsize.js"></script>
+  <script src="./script/font.js"></script>
 </head>
 <body>
   <div id="mainContainer">
@@ -22,9 +22,9 @@
       <div id="innerHeader">
         <div id="topControls">
           <form id="fontSizeform">
-            <span>Font size:</span>
-            <label for="fontSmall">Small</label><input type="radio" name="fontChanger" id="fontSmall" onclick="smallFont()">
-            <label for="fontBig">Large</label><input type="radio" name="fontChanger" id="fontBig" onclick="bigFont()">
+            <span>Font Family:</span>
+            <label for="fontSmall">MS PGothic (2channel-Type)</label><input type="radio" name="fontChanger" id="fontSmall" onclick="PGothic()">
+            <label for="fontBig">MS Gothic (Ayashii World-Type)</label><input type="radio" name="fontChanger" id="fontBig" onclick="Gothic()">
           </form>
           <form id="switchform">
             <label for="switchcontrol">Style:</label>
@@ -46,25 +46,27 @@
         <summary>Information</summary>
         <div class="infoContent">
           <ul>
-            <li>You can use this page to design Ayashii World-style ASCII Art (AA).</li>
-            <li>The recommended font is MS Gothic, but IPAMonaGothic can be used as a substitute.</li>
+            <li>You can use this page to design lots of ASCII Art (AA) from Ayashii World and 2channel.</li>
+            <li>Ayashii World usually uses MS Gothic and 2channel uses MS PGothic. IPAMonaGothic and IPAMonaPGothic can be used instead, though.</li>
+            <li>MS Gothic (Ayashii) AA will probably look odd using the MS PGothic (2ch) font and vice versa. This can usually be fixed manually.</li>
             <li>JavaScript is required to use the buttons and style options.</li>
             <li>Some buttons will provide more information if you hover over them.</li>
-            <li>If you need a place to post your AA, try <a href="https://ayashii.net">Strange World<wbr>@<wbr>Heyuri</a>. <span class="aa">ヽ(´ー｀)ノ</span></li>
+            <li>If you need a place to post your AA, try <a href="https://4-ch.net/ascii/" >these</a> <a href="https://ayashii.net/" >guys</a>, maybe. <span class="aa2">(´ω｀)</span></li>
+            <li>for suppport for specifically Bitworse-AA (you want a symbol to be implemented, tell me how good it is, tell me to die, etc) please <a href="mailto:webmasteroxy@gmail.com">email roxy</a>.</li>
           </ul>
         </div>
       </details>
     </header>
     <div id="pagerContainer">
       <div id="pager">
-        <button id="btnpage1" class="tablinks active" onclick="openPage(event, 'page1')">1</button>
-        <button id="btnpage2" class="tablinks" onclick="openPage(event, 'page2')">2</button>
-        <button id="btnpage3" class="tablinks" onclick="openPage(event, 'page3')">3</button>
-        <button id="btnpage4" class="tablinks" onclick="openPage(event, 'page4')">4</button>
-        <button id="btnpage5" class="tablinks" onclick="openPage(event, 'page5')">5</button>
-        <button id="btnpage6" class="tablinks" onclick="openPage(event, 'page6')">6</button>
-        <button id="btnpage7" class="tablinks" onclick="openPage(event, 'page7')">7</button>
-        <button id="btnpage8" class="tablinks" onclick="openPage(event, 'page8')">8</button>
+        <button title="Box-Drawing" id="btnpage1" class="tablinks active" onclick="openPage(event, 'page1')">1</button>
+        <button title="Radicals" id="btnpage2" class="tablinks" onclick="openPage(event, 'page2')">2</button>
+        <button title="Math and Logic" id="btnpage3" class="tablinks" onclick="openPage(event, 'page3')">3</button>
+        <button title="Other Symbols" id="btnpage4" class="tablinks" onclick="openPage(event, 'page4')">4</button>
+        <button title="Ideographs 1" id="btnpage5" class="tablinks" onclick="openPage(event, 'page5')">5</button>
+        <button title="Ideographs 2" id="btnpage6" class="tablinks" onclick="openPage(event, 'page6')">6</button>
+        <button title="Ideographs 3" id="btnpage7" class="tablinks" onclick="openPage(event, 'page7')">7</button>
+        <button title="Measurements" id="btnpage8" class="tablinks" onclick="openPage(event, 'page8')">8</button>
         <button title="Latin (full-width)" id="btnpage9" class="tablinks" onclick="openPage(event, 'page9')">9</button>
         <button title="Greek" id="btnpage10" class="tablinks" onclick="openPage(event, 'page10')">10</button>
         <button title="Russian" id="btnpage11" class="tablinks" onclick="openPage(event, 'page11')">11</button>
@@ -75,6 +77,7 @@
         <button title="Templates" id="btnpage16" class="tablinks" onclick="openPage(event, 'page16')">16</button>
       </div>
     </div>
+
     <div id="selectionContainer">
       <!-- Page 1 -->
       <div id="page1" class="selectionBox tabcontent">
