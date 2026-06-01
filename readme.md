@@ -6,7 +6,7 @@ This'll be something great! I hope...
 Progress
 ------------------------------
 The Bare Minimum [=====] 100% - Complete!  
-Misc Edits [===・・] 60% - Almost ready.  
+Misc Edits [====・] 80% - Almost ready.  
 Adding Symbols [・・・・・] 0% - i haven't started lmao  
 Adding Templates [・・・・・] 0% - i haven't started lmao  
 Styling [====・] 80% - i think i'm finished but there's probably something

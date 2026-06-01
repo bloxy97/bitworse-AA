@@ -78,7 +78,7 @@ body {
   line-height: 18px;
 }
 
-.MSPGothic #writeBox {
+.MSPGothic #writeBox, .MSPGothic .selectionBox, .MSPGothic .selectionBoxWide {
   font-family: MS PGothic, "Saitamaar", "IPAMonaPGothic", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -266,6 +266,7 @@ summary {
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: min-content;
   padding: 5px;
+  margin-bottom: -45px;
 }
 
 .tablinks {
@@ -306,6 +307,7 @@ summary {
 #selectionContainer {
   grid-area: selection;
   width: 100%;
+  margin-top: 45px;
 }
 
 #page1,
@@ -323,7 +325,11 @@ summary {
 #page13,
 #page14,
 #page15,
-#page16 {
+#page16,
+#page17,
+#page18,
+#page19,
+#page20 {
   width: 100%;
   padding: 5px;
 }
@@ -342,7 +348,11 @@ summary {
 #page13,
 #page14,
 #page15,
-#page16 {
+#page16,
+#page17,
+#page18,
+#page19,
+#page20 {
   display: none;
 }
 

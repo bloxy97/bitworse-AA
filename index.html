@@ -51,15 +51,21 @@
             <li>MS Gothic (Ayashii) AA will probably look odd using the MS PGothic (2ch) font and vice versa. This can usually be fixed manually.</li>
             <li>JavaScript is required to use the buttons and style options.</li>
             <li>Some buttons will provide more information if you hover over them.</li>
-            <li>If you need a place to post your AA, try <a href="https://4-ch.net/ascii/" >these</a> <a href="https://ayashii.net/" >guys</a>, maybe. <span class="aa2">(´ω｀)</span></li>
+            <li>If you need a place to post your AA, try <a href="https://4-ch.net/ascii/">these</a> <a href="https://ayashii.net/">guys</a>, maybe. <span class="aa2">(´ω｀)</span></li>
             <li>for suppport for specifically Bitworse-AA (you want a symbol to be implemented, tell me how good it is, tell me to die, etc) please <a href="mailto:webmasteroxy@gmail.com">email roxy</a>.</li>
           </ul>
         </div>
       </details>
     </header>
+    
     <div id="pagerContainer">
-      <div id="pager">
-        <button title="Box-Drawing" id="btnpage1" class="tablinks active" onclick="openPage(event, 'page1')">1</button>
+      <div id="pager" style="padding-bottom: 5px;height: 40px;margin-bottom: 5px;">
+        <button title="Box-Drawing" id="btnpage17" class="tablinks" onclick="openPage(event, 'page17')">Ⓐ</button>
+        <button title="Radicals" id="btnpage18" class="tablinks" onclick="openPage(event, 'page18')">Ⓑ</button>
+        <button title="Math and Logic" id="btnpage19" class="tablinks" onclick="openPage(event, 'page19')">Ⓒ</button>
+        <button title="Other Symbols" id="btnpage20" class="tablinks" onclick="openPage(event, 'page20')">Ⓓ</button>
+      </div><div id="pager">
+        <button title="Box-Drawing" id="btnpage1" class="tablinks" onclick="openPage(event, 'page1')">1</button>
         <button title="Radicals" id="btnpage2" class="tablinks" onclick="openPage(event, 'page2')">2</button>
         <button title="Math and Logic" id="btnpage3" class="tablinks" onclick="openPage(event, 'page3')">3</button>
         <button title="Other Symbols" id="btnpage4" class="tablinks" onclick="openPage(event, 'page4')">4</button>
@@ -69,7 +75,7 @@
         <button title="Measurements" id="btnpage8" class="tablinks" onclick="openPage(event, 'page8')">8</button>
         <button title="Latin (full-width)" id="btnpage9" class="tablinks" onclick="openPage(event, 'page9')">9</button>
         <button title="Greek" id="btnpage10" class="tablinks" onclick="openPage(event, 'page10')">10</button>
-        <button title="Russian" id="btnpage11" class="tablinks" onclick="openPage(event, 'page11')">11</button>
+        <button title="Russian" id="btnpage11" class="tablinks active" onclick="openPage(event, 'page11')">11</button>
         <button title="Hiragana" id="btnpage12" class="tablinks" onclick="openPage(event, 'page12')">12</button>
         <button title="Katakana (full-width)" id="btnpage13" class="tablinks" onclick="openPage(event, 'page13')">13</button>
         <button title="Katakana (half-width)" id="btnpage14" class="tablinks" onclick="openPage(event, 'page14')">14</button>
@@ -77,10 +83,12 @@
         <button title="Templates" id="btnpage16" class="tablinks" onclick="openPage(event, 'page16')">16</button>
       </div>
     </div>
+    
+      
 
     <div id="selectionContainer">
       <!-- Page 1 -->
-      <div id="page1" class="selectionBox tabcontent">
+      <div id="page1" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('┌','writeBox')">┌</button>
         <button class="selectItem" onclick="insertThisInThere('┬','writeBox')">┬</button>
         <button class="selectItem" onclick="insertThisInThere('┐','writeBox')">┐</button>
@@ -162,7 +170,7 @@
         <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
       </div>
       <!-- Page 2 -->
-      <div id="page2" class="selectionBox tabcontent">
+      <div id="page2" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('＼','writeBox')">＼</button>
         <button class="selectItem" onclick="insertThisInThere('丶','writeBox')">丶</button>
         <button class="selectItem" onclick="insertThisInThere('ヽ','writeBox')">ヽ</button>
@@ -214,7 +222,7 @@
         <button class="selectItem" onclick="insertThisInThere('＞','writeBox')">＞</button>
       </div>
       <!-- Page 3 -->
-      <div id="page3" class="selectionBox tabcontent">
+      <div id="page3" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('□','writeBox')">□</button>
         <button class="selectItem" onclick="insertThisInThere('■','writeBox')">■</button>
         <button class="selectItem" onclick="insertThisInThere('◇','writeBox')">◇</button>
@@ -286,7 +294,7 @@
         <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
       </div>
       <!-- Page 4 -->
-      <div id="page4" class="selectionBox tabcontent">
+      <div id="page4" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('∧','writeBox')">∧</button>
         <button class="selectItem" onclick="insertThisInThere('∨','writeBox')">∨</button>
         <button class="selectItem" onclick="insertThisInThere('⇒','writeBox')">⇒</button>
@@ -339,7 +347,7 @@
       </div>
       
       <!-- Page 5 -->
-      <div id="page5" class="selectionBox tabcontent">
+      <div id="page5" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('イ','writeBox')">イ</button>
         <button class="selectItem" onclick="insertThisInThere('彳','writeBox')">彳</button>
         <button class="selectItem" onclick="insertThisInThere('匚','writeBox')">匚</button>
@@ -381,7 +389,7 @@
         <button class="selectItem" onclick="insertThisInThere('血','writeBox')">血</button>
       </div>
       <!-- Page 6 -->
-      <div id="page6" class="selectionBox tabcontent">
+      <div id="page6" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('一','writeBox')">一</button>
         <button class="selectItem" onclick="insertThisInThere('凹','writeBox')">凹</button>
         <button class="selectItem" onclick="insertThisInThere('叶','writeBox')">叶</button>
@@ -428,7 +436,7 @@
         <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
       </div>
       <!-- Page 7 -->
-      <div id="page7" class="selectionBox tabcontent">
+      <div id="page7" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('亡','writeBox')">亡</button>
         <button class="selectItem" onclick="insertThisInThere('卜','writeBox')">卜</button>
         <button class="selectItem" onclick="insertThisInThere('又','writeBox')">又</button>
@@ -485,7 +493,7 @@
         <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
       </div>
       <!-- Page 8 -->
-      <div id="page8" class="selectionBox tabcontent">
+      <div id="page8" class="selectionBox tabcontent" style="display: none;">
         <button title="Milli" class="selectItem" onclick="insertThisInThere('㍉','writeBox')">㍉</button>
         <button title="Kilo" class="selectItem" onclick="insertThisInThere('㌔','writeBox')">㌔</button>
         <button title="Centi" class="selectItem" onclick="insertThisInThere('㌢','writeBox')">㌢</button>
@@ -541,8 +549,9 @@
         <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
         <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
       </div>
+
       <!-- Page 9 -->
-      <div id="page9" class="selectionBox tabcontent">
+      <div id="page9" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('ａ','writeBox')">ａ</button>
         <button class="selectItem" onclick="insertThisInThere('ｂ','writeBox')">ｂ</button>
         <button class="selectItem" onclick="insertThisInThere('ｃ','writeBox')">ｃ</button>
@@ -639,7 +648,7 @@
         <button class="selectItem" onclick="insertThisInThere('Ⅹ','writeBox')">Ⅹ</button>
       </div>
       <!-- Page 10 -->
-      <div id="page10" class="selectionBox tabcontent">
+      <div id="page10" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('α','writeBox')">α</button>
         <button class="selectItem" onclick="insertThisInThere('β','writeBox')">β</button>
         <button class="selectItem" onclick="insertThisInThere('γ','writeBox')">γ</button>
@@ -701,7 +710,7 @@
         <button class="selectItem" onclick="insertThisInThere('Ω','writeBox')">Ω</button>
       </div>
       <!-- Page 11 -->
-      <div id="page11" class="selectionBox tabcontent">
+      <div id="page11" class="selectionBox tabcontent" style="display: grid;">
         <button class="selectItem" onclick="insertThisInThere('а','writeBox')">а</button>
         <button class="selectItem" onclick="insertThisInThere('б','writeBox')">б</button>
         <button class="selectItem" onclick="insertThisInThere('в','writeBox')">в</button>
@@ -788,7 +797,7 @@
         <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
       </div>
       <!-- Page 12 -->
-      <div id="page12" class="selectionBox tabcontent">
+      <div id="page12" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('た','writeBox')">た</button>
         <button class="selectItem" onclick="insertThisInThere('さ','writeBox')">さ</button>
         <button class="selectItem" onclick="insertThisInThere('か','writeBox')">か</button>
@@ -934,8 +943,9 @@
         <button class="selectItem" onclick="insertThisInThere('ぽ','writeBox')">ぽ</button>
         <button class="selectItem" onclick="insertThisInThere('ぼ','writeBox')">ぼ</button>
       </div>
+
       <!-- Page 13 -->
-      <div id="page13" class="selectionBox tabcontent">
+      <div id="page13" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('タ','writeBox')">タ</button>
         <button class="selectItem" onclick="insertThisInThere('サ','writeBox')">サ</button>
         <button class="selectItem" onclick="insertThisInThere('カ','writeBox')">カ</button>
@@ -1082,7 +1092,7 @@
         <button class="selectItem" onclick="insertThisInThere('ボ','writeBox')">ボ</button>
       </div>
       <!-- Page 14 -->
-      <div id="page14" class="selectionBox tabcontent">
+      <div id="page14" class="selectionBox tabcontent" style="display: none;">
         <button class="selectItem" onclick="insertThisInThere('ﾀ','writeBox')">ﾀ</button>
         <button class="selectItem" onclick="insertThisInThere('ｻ','writeBox')">ｻ</button>
         <button class="selectItem" onclick="insertThisInThere('ｶ','writeBox')">ｶ</button>
@@ -1229,7 +1239,7 @@
         <button class="selectItem" onclick="insertThisInThere('ﾎﾞ','writeBox')">ﾎﾞ</button>
       </div>
       <!-- Page 15 -->
-      <div id="page15" class="selectionBoxWide tabcontent">
+      <div id="page15" class="selectionBoxWide tabcontent" style="display: none;">
         <button title="Meaning relaxed/mellow/chilling" class="selectItem">Mattari</button>
         <button class="selectItem" onclick="insertThisInThere('ヽ(´ー｀)ノ','writeBox')">ヽ(´ー｀)ノ</button>
         <button class="selectItem" onclick="insertThisInThere('(´ー｀)','writeBox')">(´ー｀)</button>
@@ -1416,7 +1426,7 @@
         <button class="selectItem" onclick="insertThisInThere('(;´田｀)','writeBox')">(;´田｀)</button>
       </div>
       <!-- Page 16 -->
-      <div id="page16" class="selectionBoxWide tabcontent">
+      <div id="page16" class="selectionBoxWide tabcontent" style="display: none;">
         <button class="selectItem">Gikoneko</button>
         <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
         <button title="An early, longer version of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　　 ∧ ∧\n～′￣￣(´ー`)＜text goes here\n　UU￣￣ U  U','writeBox')">　　　 ∧ ∧<br>′￣￣(´ー`)<br>UU￣￣ U  U</button>
@@ -1427,11 +1437,11 @@
         <button title="Pukkusu musume are mean girls who snicker to themselves while saying horrible things about other people; particularly virgins, nerds, and anime otaku" class="selectItem">PukkusuGirls</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('(\'ｰ\'*)ｸｽｸｽ...text goes here\n (  ﾉ)　　 (\'ｰ\'*)ﾌﾟｯ text goes here\n  ﾉ ヽ　　　(  ﾉ)\n  　　　　　 ﾉ ヽ\n  　(\'ｰ\'*)ﾊｽﾞｶｼｰ text goes here\n　   (  ﾉ)　\n　    ﾉ ヽ\n　　　　　    (\'ｰ\'*)ﾊﾞｶﾐﾀｲ text goes here\n　　　　　　　 (  ﾉ)\n　(\'ｰ\'*)ｸｽｸｽ    ﾉ ヽ\n   (  ﾉ)\n　　ﾉ ヽ　　　(\'ｰ\'*)ｻｲﾃｰ text goes here\n　　　　　　　 (  ﾉ)\n　　　　　　　　ﾉ ヽ','writeBox')">  ('ｰ'*)ｸｽｸｽ<br>   (  ﾉ)<br>    ﾉ ヽ</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('(\'ｰ\'*)hehe...[text goes here]\n (  ﾉ)　　 (\'ｰ\'*)pfft [text goes here]\n  ﾉ ヽ　　　(  ﾉ)\n  　　　　　 ﾉ ヽ\n  　(\'ｰ\'*)so embarrassing [text goes here]\n　   (  ﾉ)　\n　    ﾉ ヽ\n　　　　　    (\'ｰ\'*)so dumb [text goes here]\n　　　　　　　 (  ﾉ)\n　(\'ｰ\'*)hehe    ﾉ ヽ\n   (  ﾉ)\n　　ﾉ ヽ　　　(\'ｰ\'*)the worst [text goes here]\n　　　　　　　 (  ﾉ)\n　　　　　　　　ﾉ ヽ','writeBox')">  ('ｰ'*)hehe<br>   (  ﾉ)<br>    ﾉ ヽ</button>
-        <button class="selectItem multiLine" onclick="insertThisInThere('　　(´Д`)\n((  (ヽ(  (*\'-\') ｱﾊ～ﾝ\n　　 >> >> ヽヽ','writeBox')">(´Д`)<br>(ヽ(  (*'-')<br> >> >> ヽヽ</button>
+        <button class="selectItem multiLine" onclick="insertThisInThere('　　(´Д`)\n((  (ヽ(  (*\'-\') ｱﾊ～ﾝ\n　　 &gt;&gt; &gt;&gt; ヽヽ','writeBox')">(´Д`)<br>(ヽ(  (*'-')<br> &gt;&gt; &gt;&gt; ヽヽ</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
         
         <button class="selectItem">Pikachiu</button>
-        <button class="selectItem multiLine" onclick="insertThisInThere(' ／￣￣￣￣￣￣￣￣￣￣￣＼\n｜text goes here          ｜\n｜                        ｜　  /|   /|\n｜                        ｜　 / |  / |\n｜                        ｜  /  ⌒    \n｜                         > /●_  ● \n ＼＿＿＿＿＿＿＿＿＿＿＿／ (〇 ～  〇 ','writeBox')">    / |  / |<br>   /  ⌒    <br>  /●_  ● <br> (〇 ～  〇 </button>
+        <button class="selectItem multiLine" onclick="insertThisInThere(' ／￣￣￣￣￣￣￣￣￣￣￣＼\n｜text goes here          ｜\n｜                        ｜　  /|   /|\n｜                        ｜　 / |  / |\n｜                        ｜  /  ⌒    \n｜                         &gt; /●_  ● \n ＼＿＿＿＿＿＿＿＿＿＿＿／ (〇 ～  〇 ','writeBox')">    / |  / |<br>   /  ⌒    <br>  /●_  ● <br> (〇 ～  〇 </button>
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
 
         <button title="Robot/Mecha" class="selectItem">Robo</button>
@@ -1443,7 +1453,7 @@
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
 
         <button title="Full name: Ayashii Samurai" class="selectItem">Samurai</button>
-        <button class="selectItem multiLine" onclick="insertThisInThere('　　　　　　　　　　　 /|　　　　　　　　 　　　　　　 /)\n　　　　　　　　　　　 ||　　　　　　　　　　　　　　 /\/\n　　　　　　　　　　　 ||　　　　　 __*_　　　　　　 /\/\n　　　　　　　　　　　 ||　　　　/-(____)　　　　　 /\/\n　　　　　　　　　　　 ||　　　 /\/\/\/´ｰ`||　　　　 /\/\n　　　　　　　　　　　 ||　　,____o%　,_　　　　　/\/\n　　　　　　　　　　　 ||　 /　||　 |||　;　　　 /\/\n　　　　　　　　　　　 ||　/____|....::./|　　　/\/\n　　　　　　　　　　　 || _/__/#|_ _,,_/--|　　/\/\n　　　　　　　　　　　 || /___/######## |/&quot;&quot;-(/</\n　　　　　　　　　　　 ||_/__/ \'#######　&quot;&quot;^(/</\n　　　　　　　　　　　 ||/ /　 ,)))=:=(,　　/\/.\n　　　　　　　　　　　|,--|　 /Q...... /.　(/\n　　　　　　　　　　　/||　　 .Q....../..|\n　　　　　　　　　　　 ||　　/.Q ..../...|\n　　　　　　　　　　　　~　 /......./.....|\n　　　　　　　　　　　　　　/...../　|.....|\n　　　　　　　　　　　　　　/_.._./　 |..._|\n　　　　　　　　　　　　　　 (\` )　　　(\` )\n　　　　　　　　　　　　　　 | /　　　　| |\n　　　　　　　　　　　　　　 \'(　　　　　)\'\n　　　　　　　　　　　　　　/+|　　　　　|+|\n　　　　　　　　　　　　　　|,/　　　　　|,/ 　','writeBox')">　　 __*<br>　/-(____)<br> ////´ｰ`||</button>
+        <button class="selectItem multiLine" onclick="insertThisInThere('　　　　　　　　　　　 /|　　　　　　　　 　　　　　　 /)\n　　　　　　　　　　　 ||　　　　　　　　　　　　　　 /\/\n　　　　　　　　　　　 ||　　　　　 __*_　　　　　　 /\/\n　　　　　　　　　　　 ||　　　　/-(____)　　　　　 /\/\n　　　　　　　　　　　 ||　　　 /\/\/\/´ｰ`||　　　　 /\/\n　　　　　　　　　　　 ||　　,____o%　,_　　　　　/\/\n　　　　　　　　　　　 ||　 /　||　 |||　;　　　 /\/\n　　　　　　　　　　　 ||　/____|....::./|　　　/\/\n　　　　　　　　　　　 || _/__/#|_ _,,_/--|　　/\/\n　　　　　　　　　　　 || /___/######## |/&quot;&quot;-(/&lt;/\n　　　　　　　　　　　 ||_/__/ \'#######　&quot;&quot;^(/&lt;/\n　　　　　　　　　　　 ||/ /　 ,)))=:=(,　　/\/.\n　　　　　　　　　　　|,--|　 /Q...... /.　(/\n　　　　　　　　　　　/||　　 .Q....../..|\n　　　　　　　　　　　 ||　　/.Q ..../...|\n　　　　　　　　　　　　~　 /......./.....|\n　　　　　　　　　　　　　　/...../　|.....|\n　　　　　　　　　　　　　　/_.._./　 |..._|\n　　　　　　　　　　　　　　 (\` )　　　(\` )\n　　　　　　　　　　　　　　 | /　　　　| |\n　　　　　　　　　　　　　　 \'(　　　　　)\'\n　　　　　　　　　　　　　　/+|　　　　　|+|\n　　　　　　　　　　　　　　|,/　　　　　|,/ 　','writeBox')">　　 __*<br>　/-(____)<br> ////´ｰ`||</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
         
         <button class="selectItem">Zantei-kun</button>
@@ -1469,6 +1479,23 @@
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button> -->
       </div>
+
+      <div id="page17" class="selectionBoxWide tabcontent" style="display: none;">
+        <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
+      </div>
+
+      <div id="page18" class="selectionBoxWide tabcontent" style="display: none;">
+        <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
+      </div>
+
+      <div id="page19" class="selectionBoxWide tabcontent" style="display: none;">
+        <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
+      </div>
+
+      <div id="page20" class="selectionBoxWide tabcontent" style="display: none;">
+        <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
+      </div>
+
     </div>
     <script>
       var currentPage = document.getElementById("pager").getElementsByClassName("active")[0];
