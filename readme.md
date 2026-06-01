@@ -6,14 +6,15 @@ This'll be something great! I hope...
 Progress
 ------------------------------
 The Bare Minimum [=====] 100% - Complete!  
-Misc Edits [==・・・] 40% - started a bit...  
+Misc Edits [===・・] 60% - Almost ready.  
 Adding Symbols [・・・・・] 0% - i haven't started lmao  
 Adding Templates [・・・・・] 0% - i haven't started lmao  
 Styling [====・] 80% - i think i'm finished but there's probably something
 
-
-License\
+License
+-------------------------------
 under the original license! see below
 
-> Feel free to host a copy of Mattari AA online, modify it, or sell it to your least favorite aunt for $$$ if you  
-> want - Mattari AA is FREE software for THE WORLD ヽ(´ー｀)人(´ー｀)人(´ー｀)人(´ー｀)人(´ー｀)ノ  
+> Feel free to host a copy of Mattari AA online, modify it, or sell it to your least favorite aunt for $$$ if you want - Mattari AA is FREE software for THE WORLD ヽ(´ー｀)人(´ー｀)人(´ー｀)人(´ー｀)人(´ー｀)ノ 
+
+Just scribble over Mattari with your crayon and replace it with Bitworse.
