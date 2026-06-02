@@ -7,8 +7,8 @@ Progress
 ------------------------------
 The Bare Minimum [=====] 100% - Complete!  
 Misc Edits [====・] 80% - Almost ready.  
-Adding Symbols [・・・・・] 0% - i haven't started lmao  
-Adding Templates [・・・・・] 0% - i haven't started lmao  
+Adding Symbols [====・] 80% - There's actually a lot less symbols than i thought.
+Adding Templates [=・・・・] 20% - Began!
 Styling [=====] 100% - Complete!
 
 License
