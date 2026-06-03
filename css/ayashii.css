@@ -1,7 +1,7 @@
 :root {
   --bg-main: #004040;
   --fg-main: #ffffff;
-  --fg-alt: #ffff00;
+  --fg-alt: #008080;
   --link: #eeffee;
   --link-v: #dddddd;
   --link-a: #ff0000;
@@ -16,4 +16,10 @@
   --bg-img-write-small: url("../img/bg_shiba_small.png");
   --bg-button: #006060;
   --outline: #00dddd;
+
+  border: 3px solid !important;
+  border-top-color: var(--border-light);
+  border-left-color: var(--border-light);
+  border-bottom-color: var(--border-dark);
+  border-right-color: var(--border-dark);
 }
