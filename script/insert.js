@@ -4,6 +4,7 @@ function insertThisInThere(thisChar, thereId) {
     // ^ (IGNORE) this bug is probably caused by the variable being set as zero let's see if changing var to let does anything.  
     // On further observation, maybe if i put the cursor back into the text area after putting a character it'll solve itself.
     // ^ this works!
+    // nevermind... it just sends the caret to the mostest character. Hold, please.
 
     // set fallback location
     var theCursorLocation = 0;
