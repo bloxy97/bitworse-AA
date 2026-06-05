@@ -234,9 +234,7 @@ summary {
 #writeBox {
   background-color: var(--bg-box);
   color: var(--fg-main);
-  border: 1px outset #FFF !important;
-  outline: 1px inset #FFF;
-  outline-offset: -6px;
+  border: 3px outset #FFF !important;
   border-top-color: var(--border-dark);
   border-left-color: var(--border-dark);
   border-bottom-color: var(--border-light);
@@ -263,7 +261,7 @@ summary {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: min-content;
-  padding: 5px;
+  padding: 3px;
   margin-bottom: -45px;
 }
 
@@ -330,6 +328,8 @@ summary {
 #page20 {
   width: 100%;
   padding: 5px;
+  height: 700px;
+  overflow: scroll;
 }
 
 #page2,

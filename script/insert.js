@@ -4,24 +4,26 @@ function insertThisInThere(thisChar, thereId) {
     // ^ (IGNORE) this bug is probably caused by the variable being set as zero let's see if changing var to let does anything.  
     // On further observation, maybe if i put the cursor back into the text area after putting a character it'll solve itself.
     // ^ this works!
+    //just kidding... it just sets it to the frontmost character. Bummer.
+    // ^ fixed it! i just had to use currentPos.
 
     // set fallback location
     var theCursorLocation = 0;
 
-    // find the cursor location via IE method...
+     // find the cursor location via IE method...
     if (document.selection) {
-      ofThisInput.focus();
+     ofThisInput.focus();
       var theSelectionRange = document.selection.createRange();
       theSelectionRange.moveStart('character', -ofThisInput.value.length);
       theCursorLocation = theSelectionRange.text.length;
     }
-    
-    else if (ofThisInput.selectionStart || ofThisInput.selectionStart == '0') {
+
+    if (ofThisInput.selectionStart || ofThisInput.selectionStart == '0') {
       // or the FF way 
       theCursorLocation = ofThisInput.selectionStart;
     }
-    return theCursorLocation;
 
+    return theCursorLocation;
   }
  
   // now get ready to place our new character(s)...
@@ -36,6 +38,5 @@ function insertThisInThere(thisChar, thereId) {
   document.getElementById("writeBox").focus();
 
   // reposition cursor
-  theIdElement.setSelectionRange(currentPos);
-
+  theIdElement.setSelectionRange(currentPos, currentPos);
 }
