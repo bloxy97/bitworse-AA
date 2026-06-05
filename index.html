@@ -12,6 +12,7 @@
   <script src="./script/tabs.js"></script>
   <script src="./script/main.js"></script>
   <script src="./script/font.js"></script>
+  <script src="./script/save.js"></script>
   <link rel="icon" href="./img/fav.png" type="image/x-icon">
 </head>
 <body>
@@ -19,7 +20,7 @@
     <header>
       <div id="innerHeader">
         <div id="topControls">
-          <form id="fontSizeform">
+          <form id="fontForm">
             <span>Font Family:</span>
             <label for="fontSmall">MS PGothic (2channel-Type)</label><input type="radio" name="fontChanger" id="fontSmall" onclick="PGothic()">
             <label for="fontBig">MS Gothic (Ayashii World-Type)</label><input type="radio" name="fontChanger" id="fontBig" onclick="Gothic()">
@@ -27,14 +28,15 @@
           <form id="switchform">
             <label for="switchcontrol">Style:</label>
             <select name="switchcontrol" id="switchcontrol" size="1" onchange="chooseStyle(this.options[this.selectedIndex].value, 365)">
-              <option value="none" selected="selected">2channel (Main)</option>
-              <option value="Aya">Ayashii World (Alt)</option>
+              <option value="none" selected="selected">2channel (Light)</option>
+              <option value="Aya">Ayashii World (Dark)</option>
             </select>
           </form>
         </div>
         <div id="title">
           <h1>Bitworse AA <span class="aa">ヽ(´ω｀)</span></h1>
           <nav class="links"><a href="./changelog.html">Changelog</a></nav>
+          <button title="Makes a .txt of your AA." onclick="save('writeBox')">Save my AA!</button>
         </div>
       </div>
       <details id="infoSection">
@@ -1484,7 +1486,7 @@
         <button title="It's Remona!" class="selectItem multiLine" onclick="insertThisInThere(`  　,∧＿∧　\n　 Ｘ ノ ﾊﾍ X　　　／￣￣￣￣￣￣￣￣￣￣￣￣￣\n　 |ﾟﾉ ＾∀＾）　　＜　 I'm 'Remona' and I live with Mona.\n　§,　　　 ）　　　 ＼＿＿＿＿＿＿＿＿＿＿＿＿＿\n　 !!|　 Ｙ　|　  \n　 （_＿）＿）\n`,'writeBox')"> ,∧＿∧<br> Ｘ ノ ﾊﾍ X <br> |ﾟﾉ ＾∀＾）＜...</button>
         <button title="It's Nida! He's a racist stereotype. Although, even 2channers can seperate him from his bad origins." class="selectItem multiLine" onclick="insertThisInThere('　 ∧＿∧ 　 　／￣￣￣￣￣￣￣￣￣￣\n　<丶｀∀´> ＜ 　Mona is a parody\n　（　　　　） 　│　of Nida!!\n　｜ ｜　|　　　＼＿＿＿＿＿＿＿＿＿＿\n　〈＿フ__フ\n','writeBox')"> ∧＿∧<br><丶｀∀´> ＜...</button>
         
-        <button title="It's Onigiri!" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　　 ／■＼　　／■＼　 ／■＼　\n　　　　　　（　´∀｀∩（´∀｀∩） （　´ー｀）\n　　　　（(　（つ　　　ノ（つ　　丿　（つ　　つ　)）\n　　　　　　 ヽ　 （　ノ （　ヽノ　　　）　）　）\n　　　　　　　（＿）し'　 し（＿）　 （＿）＿）\n`,'writeBox')">　／／ ／■＼<br>（ ´（ ´（　´∀｀ ）</button>
+        <button title="It's Onigiri!" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　　 ／■＼　　／■＼　 ／■＼　\n　　　　　　（　´∀｀∩（´∀｀∩） （　´ー｀）\n　　　　（(　（つ　　　ノ（つ　　丿　（つ　　つ　)）\n　　　　　　 ヽ　 （　ノ （　ヽノ　　　）　）　）\n　　　　　　　（＿）し'　 し（＿）　 （＿）＿）\n`,'writeBox')">　／／ ／■＼<br>（ ´（ ´（ ´∀｀ ）</button>
         <button title="It's Bold Mona!" class="selectItem multiLine" onclick="insertThisInThere(`　　 ／＼＿＿／＼　　／￣￣￣￣￣\n　　（　　￣∀￣　　）＜　Y- You too...\n　　（　　　　　　　　 ） 　＼＿＿＿＿＿\n　　｜ 　　｜　　 　|\n　　（_＿＿_）_＿＿_）\n`,'writeBox')">　／＼＿＿／＼<br>（　　￣∀￣　　）＜...</button>
         <button title="It's Gana!" class="selectItem multiLine" onclick="insertThisInThere(`∧＿∧　　／￣￣￣￣￣\n（　‘∀‘）＜　You're the one!\n（　　　　） 　＼＿＿＿＿＿\n｜ ｜　|\n（_＿）＿）\n`,'writeBox')"> ∧＿∧<br>（　‘∀‘）＜...</button>
         <button title="It's Neno!" class="selectItem multiLine" onclick="insertThisInThere(`　　 λ＿λ　　　 ／￣￣￣￣￣￣￣￣￣￣\n　　（　｀ー´）　＜　It's okay, right?\n　　 /　　　ﾉつ　　＼＿＿＿＿＿＿＿＿＿＿\n　　（人＿つ_つ\n`,'writeBox')"> λ＿λ<br>（　｀ー´）＜...</button>
@@ -1498,21 +1500,21 @@
         <button title="It's Moralar!" class="selectItem multiLine" onclick="insertThisInThere('　　 ∧＿∧　　　／￣￣￣￣　\n　　（　・∀・）　＜　Let\'s Enjoy!\n　　（　　　　） 　　＼＿＿＿＿　 \n　　｜ ｜　| \n　　（_＿）＿)','writeBox')"> ∧＿∧<br>（　・∀・）＜...</button>
         <button title="It's Manny!" class="selectItem multiLine" onclick="insertThisInThere(`　 円＿円 　　　　　／￣￣￣￣￣￣￣￣￣￣￣￣￣￣\n　￥・∀･￥　　　＜　You want it? It's your my friend.\n　（　　　　つ⑩　　 |　As long as you have enough Yen.\n　｜ ＄ ｜　　　　　＼＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n　（＿_）___）\n`,'writeBox')">　 円＿円 <br>　￥・∀･￥ ＜...</button>
         <button title="It's KITAA!!!!!!!!!!!" class="selectItem multiLine" onclick="insertThisInThere(` ｷﾀ━━━━━━(ﾟ∀ﾟ)━━━━━━ !!!!! `,'writeBox')"> ｷﾀ━(ﾟ∀ﾟ)━ !!!!! </button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="It's.... Who is this?" class="selectItem multiLine" onclick="insertThisInThere(`　 ∧＿∧　　　／￣￣￣￣￣￣￣￣￣￣￣￣\n　（∞∀∞） ＜　There isn't enough relevant \n　（　　㏍　） 　│ Moralar-likes. I'm Tengo.\n　｜ ｜　 | 　　 ＼＿＿＿＿＿＿＿＿＿＿＿＿\n　《_＿》_＿》\n`,'writeBox')">　 ∧＿∧<br>　（∞∀∞）　＜...</button>
       </div>
       <!-- Page 18 -->
       <div id="page18" class="selectionBoxWide tabcontent" style="display: none;">
-        <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
+        <button class="selectItem">Giko and Co.</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　　＿＿＿_∧∧　　 ／￣￣￣￣￣￣￣\n～'　＿＿__(,,ﾟДﾟ)　＜　You can die! \n　 ＵU 　 　Ｕ U　 　　＼＿＿＿＿＿＿＿ \n`,'writeBox')">　　＿_∧∧<br>～'　__(,,ﾟДﾟ)<br>　 ＵU Ｕ U　 </button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　　 　　　　　　　　／￣￣￣￣￣￣￣￣\n　　∧ ∧ 　　　＜　Erm, what the flip?\n　 (　・Д・)　　 　 ＼＿＿＿＿＿＿＿＿\n～（＿__ﾉ\n`,'writeBox')">　　∧ ∧<br>　 (　・Д・)<br>～（＿__ﾉ</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　　,,,,,,,,,,,,,,,∧,,∧　 　／￣￣￣￣￣￣￣￣￣\n～′,,,,,,,,,,ミ,,ﾟДﾟ彡＜ 　It's all in the wrist!\n　UU&quot;&quot;&quot;&quot; U U　　　 ＼＿＿＿＿＿＿＿＿＿\n`,'writeBox')">　　,,,,,,,,,,,∧,,∧<br>～′,,,,,,ミ,,ﾟДﾟ彡<br>　UU"" U U</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+
       </div>
       <!-- Page 19 -->
       <div id="page19" class="selectionBoxWide tabcontent" style="display: none;">

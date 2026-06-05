@@ -115,6 +115,19 @@ header {
   
 }
 
+button {
+  border: 2px solid;
+  border-top-color: var(--border-btn-light);
+  border-left-color: var(--border-btn-light);
+  border-bottom-color: var(--border-btn-dark);
+  border-right-color: var(--border-btn-dark);
+  background-color: var(--bg-button);
+  color: var(--fg-main);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 #innerHeader {
   display: flex;
   justify-content: space-between;
@@ -187,8 +200,9 @@ h1 {
 
 summary {
   background-color: var(--fg-alt);
-  border: 1px outset #FFF !important;
-  outline: 1px inset #FFF;
+  border: 1px outset;
+  outline: 1px inset;
+  outline-color: var(--border-light);
   outline-offset: -6px;
   border-top-color: var(--border-light);
   border-left-color: var(--border-light);
@@ -234,11 +248,11 @@ summary {
 #writeBox {
   background-color: var(--bg-box);
   color: var(--fg-main);
-  border: 3px outset #FFF !important;
-  border-top-color: var(--border-dark);
-  border-left-color: var(--border-dark);
-  border-bottom-color: var(--border-light);
-  border-right-color: var(--border-light);
+  border: 3px outset;
+  border-top-color: var(--border-btn-light);
+  border-left-color: var(--border-btn-light);
+  border-bottom-color: var(--border-dark);
+  border-right-color: var(--border-dark);
   font-family:
     "MS Gothic",
     "IPAMonaGothic",

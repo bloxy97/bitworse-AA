@@ -20,16 +20,16 @@
   <header>
     <div id="innerHeader">
       <div id="topControls">
-        <form id="fontSizeform">
-          <span>Font size:</span>
-          <label for="fontSmall">Small</label><input type="radio" name="fontChanger" id="fontSmall" onclick="smallFont()">
-          <label for="fontBig">Large</label><input type="radio" name="fontChanger" id="fontBig" onclick="bigFont()">
+        <form id="fontForm">
+          <span>Font Family:</span>
+          <label for="fontSmall">MS PGothic (2channel-Type)</label><input type="radio" name="fontChanger" id="fontSmall" onclick="PGothic()">
+          <label for="fontBig">MS Gothic (Ayashii World-Type)</label><input type="radio" name="fontChanger" id="fontBig" onclick="Gothic()">
         </form>
         <form id="switchform">
           <label for="switchcontrol">Style:</label>
           <select name="switchcontrol" id="switchcontrol" size="1" onchange="chooseStyle(this.options[this.selectedIndex].value, 365)">
-            <option value="none" selected="selected">2channel (Main)</option>
-            <option value="Aya">Ayashii World (Alt)</option>
+              <option value="none" selected="selected">2channel (Light)</option>
+              <option value="Aya">Ayashii World (Dark)</option>
           </select>
         </form>
       </div>
