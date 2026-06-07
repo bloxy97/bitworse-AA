@@ -25,8 +25,8 @@ Progress
 ------------------------------
 The Bare Minimum [=====] 100% - Complete!  
 Misc Edits [=====] 100% - Complete! I hope...  
-Adding Symbols [=====]・・ 100 + ???% - It's in a servicable state but it'll probably explain once i get requests for things.
-Adding Templates [=====]・・ 100 + ???% - It's in a servicable state but it'll probably explain once i get requests for things.
+Adding Symbols [=====]・・ 100 + ???% - It's in a servicable state but it'll probably explain once i get requests for things.  
+Adding Templates [=====]・・ 100 + ???% - It's in a servicable state but it'll probably explain once i get requests for things.  
 Styling [=====] 100% - Complete!
 
 License
