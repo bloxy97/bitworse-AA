@@ -2,8 +2,8 @@
   --bg-main: #efefef;
   --fg-main: #000;
   --fg-alt: #CCFFCC;
-  --link: #9e9e9e;
-  --link-v: #555555;
+  --link: #0000ee;
+  --link-v: #551a8b;
   --link-a: #ff0000;
   --bg-box: #efefef;
   --bg-box-transparent: #cfca;
@@ -194,8 +194,6 @@ h1 {
 .links {
   display: inline-block;
   margin: 0;
-  /* font-size: 0.8125em; */
-  /* border: 1px solid #ff0000; */
 }
 
 summary {
@@ -268,7 +266,7 @@ summary {
 
 #pagerContainer {
   grid-area: pager;
-  width: 100%;
+  width: 150%;
 }
 
 #pager {
@@ -277,6 +275,11 @@ summary {
   grid-auto-rows: min-content;
   padding: 3px;
   margin-bottom: -45px;
+}
+
+.links img {
+  align-items: center;
+  margin-bottom: -10px;
 }
 
 .tablinks {
@@ -316,7 +319,7 @@ summary {
 
 #selectionContainer {
   grid-area: selection;
-  width: 100%;
+  width: 150%;
   margin-top: 45px;
 }
 
@@ -424,6 +427,10 @@ summary {
 
 #writeContainer {
   grid-area: write;
+  width: 1640px;
+  /*! align-content: end; */
+  /*! margin-right: 179px; */
+  margin-left: 3.5%;
 }
 
 #writeBox {

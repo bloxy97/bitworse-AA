@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A browser-based ASCII art editor for Ayashii World-type bulletin boards.">
+  <meta name="description" content="It might let you edit AA in your browser with 2channel and Ayashii World flavors.">
   <title>Bitworse AA</title>
   <link href="./css/main.css" rel="stylesheet" type="text/css">
   <link href="./css/ayashii.css" rel="alternate stylesheet" type="text/css" title="Aya">
@@ -35,8 +35,15 @@
         </div>
         <div id="title">
           <h1>Bitworse AA <span class="aa">ヽ(´ω｀)</span></h1>
-          <nav class="links"><a href="./changelog.html">Changelog</a></nav>
-          <button title="Makes a .txt of your AA." onclick="save('writeBox')">Save my AA!</button>
+          <nav class="links">
+             <a href="./changelog.html">Changelog</a> 
+             ＊
+             <a href="https://github.com/bloxy97/bitworse-AA">Source</a>
+             ＊
+             <img src="./img/aabutton.gif">
+             ＊
+             <button title="Makes a .txt of your AA." onclick="save('writeBox')">Save my AA!</button>
+           </nav>
         </div>
       </div>
       <details id="infoSection">
@@ -50,6 +57,7 @@
             <li>Some buttons will provide more information if you hover over them.</li>
             <li>If you need a place to post your AA, try <a href="https://4-ch.net/ascii/">these</a> <a href="https://ayashii.net/">guys</a>, maybe. <span class="aa2">(´ω｀)</span></li>
             <li>for suppport for specifically Bitworse-AA (you want a symbol to be implemented, tell me how good it is, tell me to die, etc) please <a href="mailto:webmasteroxy@gmail.com">email roxy</a>.</li>
+            <li>Thanks to <a href="https://github.com/Heyuri/Mattari-AA">Heyuri</a>, <a href="https://web.archive.org/web/20220530052733/http://matsucon.net/">Matsucon</a>, <a href="https://riceballman.web.fc2.com/">The 2channel Illustration Project</a>, and <a href="https://namelessrumia.heliohost.org/w/doku.php?id=start">these</a> <a href="https://nonexistentfandomsfandom.neocities.org/AAcats/">wikis</a>. All of them will have approximately 54.324 trillion metric tons of spicy wings sent to their residence in approximately 3 to 5 buisness days.</li>
           </ul>
         </div>
       </details>
@@ -57,10 +65,10 @@
     
     <div id="pagerContainer">
       <div id="pager" style="padding-bottom: 5px;height: 40px;margin-bottom: 5px;">
-        <button title="Box-Drawing" id="btnpage17" class="tablinks" onclick="openPage(event, 'page17')">Ⓐ</button>
-        <button title="Radicals" id="btnpage18" class="tablinks" onclick="openPage(event, 'page18')">Ⓑ</button>
-        <button title="Math and Logic" id="btnpage19" class="tablinks" onclick="openPage(event, 'page19')">Ⓒ</button>
-        <button title="Other Symbols" id="btnpage20" class="tablinks" onclick="openPage(event, 'page20')">Ⓓ</button>
+        <button title="Mona / Moralar Templates" id="btnpage17" class="tablinks" onclick="openPage(event, 'page17')">Ⓐ</button>
+        <button title="Giko / Shii Templates" id="btnpage18" class="tablinks" onclick="openPage(event, 'page18')">Ⓑ</button>
+        <button title="Other Guy Templates" id="btnpage19" class="tablinks" onclick="openPage(event, 'page19')">Ⓒ</button>
+        <button title="Uh...." id="btnpage20" class="tablinks" onclick="openPage(event, 'page20')">Ⓓ</button>
       </div><div id="pager">
         <button title="Box-Drawing" id="btnpage1" class="tablinks" onclick="openPage(event, 'page1')">1</button>
         <button title="Radicals" id="btnpage2" class="tablinks" onclick="openPage(event, 'page2')">2</button>
@@ -80,8 +88,6 @@
         <button title="Templates" id="btnpage16" class="tablinks" onclick="openPage(event, 'page16')">16</button>
       </div>
     </div>
-    
-      
 
     <div id="selectionContainer">
       <!-- Page 1 -->
@@ -293,7 +299,7 @@
         <button class="selectItem" onclick="insertThisInThere('９','writeBox')">９</button>
         <button class="selectItem" onclick="insertThisInThere('０','writeBox')">０</button>
         <button class="selectItem" onclick="insertThisInThere('・','writeBox')">・</button>
-        <button class="selectItem" onclick="insertThisInThere('　','writeBox')">　</button>
+        <button class="selectItem" onclick="insertThisInThere('‿','writeBox')">‿</button>
       </div>
       <!-- Page 4 -->
       <div id="page4" class="selectionBox tabcontent" style="display: none;">
@@ -1436,7 +1442,6 @@
         <button title="Pukkusu musume are mean girls who snicker to themselves while saying horrible things about other people; particularly virgins, nerds, and anime otaku" class="selectItem">PukkusuGirls</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('(\'ｰ\'*)ｸｽｸｽ...text goes here\n (  ﾉ)　　 (\'ｰ\'*)ﾌﾟｯ text goes here\n  ﾉ ヽ　　　(  ﾉ)\n  　　　　　 ﾉ ヽ\n  　(\'ｰ\'*)ﾊｽﾞｶｼｰ text goes here\n　   (  ﾉ)　\n　    ﾉ ヽ\n　　　　　    (\'ｰ\'*)ﾊﾞｶﾐﾀｲ text goes here\n　　　　　　　 (  ﾉ)\n　(\'ｰ\'*)ｸｽｸｽ    ﾉ ヽ\n   (  ﾉ)\n　　ﾉ ヽ　　　(\'ｰ\'*)ｻｲﾃｰ text goes here\n　　　　　　　 (  ﾉ)\n　　　　　　　　ﾉ ヽ','writeBox')">  ('ｰ'*)ｸｽｸｽ<br>   (  ﾉ)<br>    ﾉ ヽ</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('(\'ｰ\'*)hehe...[text goes here]\n (  ﾉ)　　 (\'ｰ\'*)pfft [text goes here]\n  ﾉ ヽ　　　(  ﾉ)\n  　　　　　 ﾉ ヽ\n  　(\'ｰ\'*)so embarrassing [text goes here]\n　   (  ﾉ)　\n　    ﾉ ヽ\n　　　　　    (\'ｰ\'*)so dumb [text goes here]\n　　　　　　　 (  ﾉ)\n　(\'ｰ\'*)hehe    ﾉ ヽ\n   (  ﾉ)\n　　ﾉ ヽ　　　(\'ｰ\'*)the worst [text goes here]\n　　　　　　　 (  ﾉ)\n　　　　　　　　ﾉ ヽ','writeBox')">  ('ｰ'*)hehe<br>   (  ﾉ)<br>    ﾉ ヽ</button>
-        <button class="selectItem multiLine" onclick="insertThisInThere('　　(´Д`)\n((  (ヽ(  (*\'-\') ｱﾊ～ﾝ\n　　 &gt;&gt; &gt;&gt; ヽヽ','writeBox')">(´Д`)<br>(ヽ(  (*'-')<br> &gt;&gt; &gt;&gt; ヽヽ</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
         
         <button class="selectItem">Pikachiu</button>
@@ -1469,8 +1474,6 @@
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
 
         <button class="selectItem">Misc.</button>
-        <button class="selectItem multiLine" onclick="insertThisInThere('     　　      γ⌒ヽ\n               (  人 )\n               │ ll│\n               │ ll│\n               │ ll│\n               │ ll│\n               │ ll│\n          (*\'-\'ﾉ  ll│\n            (ヽ  ﾉﾉ ﾉ\n  　　　　　ノ　ωヽ','writeBox')">   γ⌒ヽ<br>   (  人 )<br>   │ ll│<br>   │ ll│</button>
-        <button class="selectItem multiLine" onclick="insertThisInThere('(;´Д`)\n　( ヽη⌒ヽ\n　　ﾉωﾉ','writeBox')">(;´Д`)<br>　( ヽη⌒ヽ<br>　　ﾉωﾉ</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('((┌――――――――┐┌――――――――┐\n　└――――――― |｜｜| ―――――――┘))\n　　　　　　　　　 |｜｜|\n　　　　　　　　へ／⌒⌒＼へ　　　　  ／￣￣￣￣￣￣￣￣￣￣￣＼ \n　　　　　　　／＼　人人　／＼　　 　｜　　　　　　　　　　　　｜ \n　　　　　　（＼ζ(￣－￣)ζ／ ）　 ＜　Let\'s just relax, okay?｜ \n　　　　 っ　 )/∫　 ∞ 　∫)／　－　｜　　　　　　　　　　　　｜ \n　　　　￣＼＼／／( ⌒⌒ )＼＼／／￣　＼＿＿＿＿＿＿＿＿＿＿＿／\n　　　　　　　　　 )    (\n　　　　　　　　 ／￣￣￣＼\n　　　　　　　 ／ ∫　　∫ ＼\n　　　　　　　～∫～∫∫～∫～\n　　　　　　　　～　～～　～\n　　　　　　　　　 ∥　∥\n　　　　　　　　　 ￥　￥\n　　　　　　　　 ∈Μ　Μ∋','writeBox')">へ／⌒⌒＼へ<br>＼　人人　／<br>ζ(￣－￣)ζ<br>∫　 ∞ 　∫<br>／( ⌒⌒ )＼</button>
         <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
         <!-- <button class="selectItem multiLine" onclick="insertThisInThere('　','writeBox')">　</button>
@@ -1505,23 +1508,59 @@
       <!-- Page 18 -->
       <div id="page18" class="selectionBoxWide tabcontent" style="display: none;">
         <button class="selectItem">Giko and Co.</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　　＿＿＿_∧∧　　 ／￣￣￣￣￣￣￣\n～'　＿＿__(,,ﾟДﾟ)　＜　You can die! \n　 ＵU 　 　Ｕ U　 　　＼＿＿＿＿＿＿＿ \n`,'writeBox')">　　＿_∧∧<br>～'　__(,,ﾟДﾟ)<br>　 ＵU Ｕ U　 </button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　　 　　　　　　　　／￣￣￣￣￣￣￣￣\n　　∧ ∧ 　　　＜　Erm, what the flip?\n　 (　・Д・)　　 　 ＼＿＿＿＿＿＿＿＿\n～（＿__ﾉ\n`,'writeBox')">　　∧ ∧<br>　 (　・Д・)<br>～（＿__ﾉ</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　　,,,,,,,,,,,,,,,∧,,∧　 　／￣￣￣￣￣￣￣￣￣\n～′,,,,,,,,,,ミ,,ﾟДﾟ彡＜ 　It's all in the wrist!\n　UU&quot;&quot;&quot;&quot; U U　　　 ＼＿＿＿＿＿＿＿＿＿\n`,'writeBox')">　　,,,,,,,,,,,∧,,∧<br>～′,,,,,,ミ,,ﾟДﾟ彡<br>　UU"" U U</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(` 　　∧∧,..,､､.,､,､､..,_　　　　　 　／i,.\n　;'ﾟДﾟ、､:、.:、:,　:,.: ::｀ﾞ:.:ﾞ:｀''':,'.´ -‐i.\n　'､;: ...: ,:. :.､.:',.: .:: _;.;;..; :..‐'ﾞ ￣ ￣\n　　\｀&quot;∪∪&apos;&apos;\`ﾞ ∪∪´´ \n`,'writeBox')"> 　　∧∧,..,､､.,､,､､..,_　　　　　 　／i,.<br>　;'ﾟДﾟ、､:、.:、:,　:,.: ::｀ﾞ:.:ﾞ:｀''':,'.´ -‐i.<br>　'､;: ...: ,:. :.､.:',.: .:: _;.;;..; :..‐'ﾞ ￣ ￣<br>　　｀"∪∪''`ﾞ ∪∪´´ </button>        
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　　　 　　 へ ヘ\n　　　　　　＼| /\n　　　　　　&apos;;: &quot;:;.\n　　∧∧⊂.;&apos;､ :つ\n　;&apos;ﾟДﾟ、&quot;:、.: :;:&apos;\n　&apos;､;: ...: ,:. :.､.: &apos; \n　　｀&quot;∪∪&apos&apos\`ﾞ\n`,'writeBox')">　　　 　　 へ ヘ<br>　　　　　　＼| /<br>　　　　　　';: ":;.<br>　　∧∧⊂.;'､ :つ<br>　;'ﾟДﾟ、":、.: :;:'<br>　'､;: ...: ,:. :.､.: ' <br>　　｀"∪∪''`ﾞ</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
-        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="It's Gikoneko!" class="selectItem multiLine" onclick="insertThisInThere(`　　＿＿＿_∧∧　　 ／￣￣￣￣￣￣￣\n～'　＿＿__(,,ﾟДﾟ)　＜　You can die! \n　 ＵU 　 　Ｕ U　 　　＼＿＿＿＿＿＿＿ \n`,'writeBox')">　　＿_∧∧<br>～'　__(,,ﾟДﾟ)<br>　 ＵU Ｕ U　 </button>
+        <button title="It's Chibi Giko!" class="selectItem multiLine" onclick="insertThisInThere(`　　 　　　　　　　　／￣￣￣￣￣￣￣￣\n　　∧ ∧ 　　　＜　Erm, what the flip?\n　 (　・Д・)　　 　 ＼＿＿＿＿＿＿＿＿\n～（＿__ﾉ\n`,'writeBox')">　　∧ ∧<br>　 (　・Д・)<br>～（＿__ﾉ</button>
+        <button title="It's Fusagiko!" class="selectItem multiLine" onclick="insertThisInThere(`　　,,,,,,,,,,,,,,,∧,,∧　 　／￣￣￣￣￣￣￣￣￣\n～′,,,,,,,,,,ミ,,ﾟДﾟ彡＜ 　It's all in the wrist!\n　UU&quot;&quot;&quot;&quot; U U　　　 ＼＿＿＿＿＿＿＿＿＿\n`,'writeBox')">　　,,,,,,,,,,,∧,,∧<br>～′,,,,,,ミ,,ﾟДﾟ彡<br>　UU"" U U</button>
+        <button title="It's the Hakusorina!" class="selectItem multiLine" onclick="insertThisInThere(`　 　 　　　 　 　　＿　 　 　　 ＿＿_ ∧∧　 　　　　　＿　　 　　　　 人人人人人人人人人人\n　 　 　 　　／⌒＼ ＼ 　 　 〔〔 |Ξ (,,゜Д゜)つ　／⌒＾＼＼　 　　＜　　　　　　　　　　　　　　 ＞\n　 　 　 　 /／⌒＼ |◎| 　 ＿/ ||Ξ/ つ¶¶　 / ／⌒＼|◎|　　　＜　　　はくそリーナへ　　　＞\n　 　 　 ／　　　　　）|日|＼/__＼|／￣￣￣￣＼　 _____.|日|＼_　 ＜　　　　　　　　　　　　　　 ＞\n　 　 　/　　●　　 ＿＿_　 ＼|／ 　 　 　 ●　　●/＼　￣＼__〉　　∨∨∨∨∨∨∨∨∨∨\n　 　／　　　　　 Y　 　 　Y　）ヽ Y　　Y　　　　　　 ＼..＼ ＿/＾~　　　　　　　　　　　/＾|/＾|__\n　 　| ▼　 　 　　 |　 　　　| /. ））.|　　 |　　　　 　 ▼ |／＼＼ 　 　 　　　　　　　　 /＾/.＾/_⊃\n　 　|_人＿＿ノ⌒|　　　 　|/ノノノ＼__人　　　、＿人_| 　 　＼＼＿＿＿＿＿_　__/＾/＾/＾/⊃\　 　　　 　 　 /￣ ＼＿＿|　 ||　￣/目＞、 ＿＿＿ノ＼. 　 /|￣　 　 | ￣ ￣ ||γ～～～ |\n　 　 　　　 　/　　　/ 　./|__＿||_／￣／{三|三|三｝|　 　 ＼/|||‐‐‐‐‐‐＼ 　⊂二⌒） γ　 /\n　 　　　　　 /＿＿/＿./　＼＿|ロ／￣{三|三|三｝ロ|　 　 　 ＾＾|＿＿＿＿＼＿||{　ヽーー/\n　　　　　 ／　　　/ 　|/　　　　　〉－－－－－〈＿　　　　　　　　　　　　￣￣￣￣￣￣\n　 　 　 /======/ 　 |　 　／￣￣￣|＾＾ ● ＾＾ ●）＼\n　 　 ／~/⌒|＼.||　 /　 　|￣￣＿＿|＿　 　▼ 　| ￣|\n　 （￣（）|⌒|　）||　/　 　 /　 　/ /ミ三＼＿人__/三{.|\n　 （￣（）|＿|/　||/ 　 　 /　 　/ / / 　￣/|:::::|::::|　 　＼\n　　（￣（）／)/￣ 　 　 /　 　 / / / 　　./ |:::::|::::|＼　 　＼\n　 　＾（￣）/ 　 　 　 　/＿＿/_/ / 　 　/　 ＼__/　 ＼　　 ＼\n　 　　￣＾　 　 　 　 　 　 　/＾＾ /　　　/　　　＼ 　　　＼ |￣￣|\n　 　 　　　 　 　　 　 　 　 / 　 /　　　/ 　 　 　 ＼ 　　　/　 　 |\n　 　 　　　 　 　　 　 　 __/三|/　　　/ 　 　 　 　　>三三＼___/\n　 　 　　　 　 　　 　 ／　＼／￣￣〉　 　 　 　　 /＼　　/　　/\n　 　 　　　 　 　　 ／＼　 　|＿＿/|　 　 　 　　 /　　|　/　　/\n　 　 　　　 　 　／　　　|　/　 　 　/　 　 　 　　/　 　|_/　__/\n　 　 　　　 　／　　　　 |_/＿＿_/　 　 　 　　 /　　　 /￣ /\n　 　 　　　 /　　　 ＿_/　 　 　/　 　 　 　　 /|　　　/＿_/\n　 　 　　　/　 　／　　￣￣| /　　　　　　　〈　＼／__〈/\n　 　 　　 /＿／＿／￣＼_|/　 　 　　　　　 ＼　 ＼＿＼\n　 　 　　 ＾ /￣　 　|　_＿ ＼　　　 　 　 　　 　＼.　|　 　|\n　 　 　　　 |＿＿＿/＿＿＿|　　 　　　　　　　　 ＼|＿／\n`,'writeBox')">　　　　  　 ∧∧　 　　<br>　 　 　 　 (,,゜Д゜)つ　<br>　＿/ ||Ξ/ つ¶¶　 <br></button>
 
+        <button title="You're telling me a Shrimp Fried this Giko?" class="selectItem multiLine" onclick="insertThisInThere(` 　　∧∧,..,､､.,､,､､..,_　　　　　 　／i,.\n　;'ﾟДﾟ、､:、.:、:,　:,.: ::｀ﾞ:.:ﾞ:｀''':,'.´ -‐i.\n　'､;: ...: ,:. :.､.:',.: .:: _;.;;..; :..‐'ﾞ ￣ ￣\n　　\｀&quot;∪∪&apos;&apos;\`ﾞ ∪∪´´ \n`,'writeBox')"> 　　∧∧,..,､､.,､,､､..,_　　　　　 　／i,.<br>　;'ﾟДﾟ、､:、.:、:,　:,.: ::｀ﾞ:.:ﾞ:｀''':,'.´ -‐i.<br>　'､;: ...: ,:. :.､.:',.: .:: _;.;;..; :..‐'ﾞ ￣ ￣<br>　　｀"∪∪''`ﾞ ∪∪´´ </button>        
+        <button title="Ebifurai alt." class="selectItem multiLine" onclick="insertThisInThere(`　　　 　　 へ ヘ\n　　　　　　＼| /\n　　　　　　&apos;;: &quot;:;.\n　　∧∧⊂.;&apos;､ :つ\n　;&apos;ﾟДﾟ、&quot;:、.: :;:&apos;\n　&apos;､;: ...: ,:. :.､.: &apos; \n　　｀&quot;∪∪&apos;&apos;\`ﾞ\n`,'writeBox')">　　　 　　 へ ヘ<br>　　　　　　＼| /<br>　　　　　　';: ":;.<br>　　∧∧⊂.;'､ :つ<br>　;'ﾟДﾟ、":、.: :;:'<br>　'､;: ...: ,:. :.､.: ' <br>　　｀"∪∪''`ﾞ</button>
+        <button title="It's Gikoel!" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　　　　（＼\n　　　　　　　　　＼＼\n　　　　　　 　　　（＼＼\n　　　　 　　　　　　＼＼＼\n　　　　 　　　　　　（＼＼＼＼\n　　　　 　　　　　　（＼＼＼＼＼\n　 　　　　　　　　　　＼＼ ｜｜｜\n（￣￣￣￣￣￣￣￣￣＼ ｜ ⊂⊃\n　￣￣（￣￣／／／／￣＼　 ∧ ∧　 　 ／￣￣￣￣￣￣￣￣￣￣￣￣￣\n　　　　　￣（／／／／￣＼＼( ゜Д゜) ＜　I hate all of you!!!!!!!\n　　　　　　　　（／（／／／￣（つ　つ 　　 ＼＿＿＿＿＿＿＿＿＿＿＿＿＿\n　　　　　　　　　　　　（／（／｜ 　＼＼\n　　　　　　　　　　　　　（／（（/ ∧｜＼＼\n　　　　　　　　　　　　　　　　 ∪　∪　　＼＼\n　　　　　　　　　　　　　　　　　　　　　　　　＼＼\n　　　　　　　　　　　　　　　　　　　　　　 　　　　＼＼\n　　　　　　　　　　　　　　　　　　　　　　　　　　　 　＼＼\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＼＼\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＼＼\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ＼＼\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　＼＼\n`,'writeBox')">＼ ｜ ⊂⊃<br>　 ＼　  ∧ ∧　<br> 　 　＼( ゜Д゜)　＜...</button>
+        <button title="It's Gikogurumi!" class="selectItem multiLine" onclick="insertThisInThere(`＼Erm, what the Dole?／ ＼That isn't even a pun.／\n　　　　　　　　　　　　 　 　 　 　 ┌┐\n　　　　　　ヽ　　　　　　　　　　 ／ /\n　　　　 γ⌒^ヽ　　　　　　　／　/ i\n　　　　 /:::::::::::::ヽ　　　　　　|　(,,ﾟДﾟ)\n　　 　 /::::::::(,,ﾟДﾟ)　　 　 　 |（ノi　　|）\n　　　　i:::::（ﾉDole|）　　　　　|　 i　　i\n　　　　 ﾞ､:::::::::::::ノ　　　　　　＼_ヽ＿,ゝ\n　　　　　　U&quot;U　　　　　　　　 U&quot; U\n`,'writeBox')">　γ⌒^ヽ　　 ／　/ i<br>　/:::::::::::::ヽ　|　(,,ﾟДﾟ)<br>/::::::::(,,ﾟДﾟ) |（ノi　　|）</button>
+        
+        <button class="selectItem">Shii and Co.</button>
+        <button title="It's Shii!" class="selectItem multiLine" onclick="insertThisInThere(`　　　　∧ ∧＿__　　ﾀﾞｯｺ♪ \n　 　／(*ﾟーﾟ)　／＼ \n　／|￣∪∪￣|＼／ \n　 　|　 　 　 　 |／ \n　 　 ￣￣￣￣\n`,'writeBox')">　　　　∧ ∧＿__　　ﾀﾞｯｺ♪ <br>　 　／(*ﾟーﾟ)　／＼ </button>
+        <button title="It's Tsuu!" class="selectItem multiLine" onclick="insertThisInThere(`　 ＿＿_∧∧_　 　＿＿\n／＼　 (*ﾟ∀ﾟ)つ=|＿_ノ\n＼／|￣∪￣￣|＼\n　 ＼| 　〓〓 　|\n　　　￣￣￣￣ \n`,'writeBox')">　 ＿＿_∧∧_　 　＿＿<br>／＼　 (*ﾟ∀ﾟ)つ=|＿_ノ</button>
+        <button title="It's Baby Shii!" class="selectItem multiLine" onclick="insertThisInThere(` 　 　 ∧∧\n 　　 (*ﾟワﾟ)\n 　　/　 つ□　　 ﾊ,,ﾊ\n～（,,＿,,） 　 　　(ﾟ-ﾟ*),,)~\n`,'writeBox')">   ∧∧　　 ﾊ,,ﾊ<br>  (*ﾟワﾟ)　　(ﾟ-ﾟ*),,)~</button>
+        <button title="IT's Diagonal Shii!" class="selectItem multiLine" onclick="insertThisInThere(` 　／l、\n（ﾟ､ ｡ ７\n　　l、~ ヽ\n　ししと ）ノ\n`,'writeBox')"> 　／l、<br>（ﾟ､ ｡ ７<br>　l、~ ヽ<br>　ししと ）ノ<br></button>
+
+        <!-- save 4 later
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        <button title="" class="selectItem multiLine" onclick="insertThisInThere(`　`,'writeBox')">　</button>
+        -->
       </div>
       <!-- Page 19 -->
       <div id="page19" class="selectionBoxWide tabcontent" style="display: none;">
-        <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
+        <button class="selectItem">Weirdos .1</button>
+        <button title="It's Shobon!" class="selectItem multiLine" onclick="insertThisInThere(`　 ∧＿∧　　　／￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣\n　（´・ω・｀)　＜　Shobon once a day...\n　（つ旦と）　　 ＼＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\n　と＿）＿）\n`,'writeBox')">　 ∧＿∧　　　／￣<br>　（´・ω・｀)　＜　...</button>
+        <button title="It's Ranbuta!" class="selectItem multiLine" onclick="insertThisInThere(`　 ε　⌒ﾍ⌒ヽﾌ　ブヒ♪\n　（ 　　( 　・ω・）　\n　　しー し─Ｊ　ヽ･ﾟ･ ｡･ﾟ/\n`,'writeBox')">　 ε　⌒ﾍ⌒ヽﾌ<br>　（ 　　( 　・ω・）<br>　　しー し─Ｊ</button>
+        <button title="It's Kuma! Not related to a certain other bear." class="selectItem multiLine" onclick="insertThisInThere(`　　 ∩＿＿＿∩\n　　 | ノ　　　　　 ヽ\n　　/　　●　　　● |　\n　 |　　　　( _●_)　 ミ 　\n　彡､　　　|∪|　　､｀＼ 　 Kuma──！！\n/　＿＿　 ヽノ　/´>　 ) \n(＿＿＿）　　　/　(_／\n　|　　　　　　 /\n　|　　／＼　＼\n　|　/　　　 )　 )\n　∪　　　 （　 ＼ \n　　　　　　 ＼＿)\n`,'writeBox')">　　 ∩＿＿＿∩<br>　　 | ノ　　　　　 ヽ<br>　　/　　●　　　● |　<br>　 |　　　　( _●_)　 ミ 　<br>　彡､　　　|∪|　　､｀＼<br>/　＿＿　 ヽノ　/´>　 ) <br>(＿＿＿）　　　/　(_／<br></button>
+        <button title="&#10;&#10;&#10;&#10;&#10;&#10; tanasinn" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　　　　　　　　∴∵∴∵∴\n　　　　　　　　　　　　　　∴∵∴∵∴∵\n　　　　　　　　　　　∴∵∴∵∴∵∵∴∵∴∵\n　　　　　　　.∵∴∵：(・)∴∵∴∵∴∵\n　　　　　　　　　∴∵rミ ,○､：(・)∴∵∴∵\n　　　　　　　　∴∵/ 　/　ミ 〉∴∵∵\n　　　　　∴∵∴∵| ￣＼　/∴∵∴∵\n　　　　　∴∴∴∵∴.､\` 　 ∴∵∴∵∴∵\n　 　 ri　　∴∵∴∵∴∵∴∵∴∵∴\n　_＿,! ヽ,∴∵∴∴tanasinn∵∴\n三三　 _&lbrace;,&lbrace;,∴∵∴∵∴∵∴∵∴∵\n　￣ ~~∴∵∵∴∵∴∵∴==ｭ\n　　　　　　∴∵∴∵∴∵/,　　!\n　　　　　　　∴∵∴∵　 \`^|.|.|jj\n　　　　　∴∵　　　　　　　 .l.|.|\n`,'writeBox')">　　.∵∴∵：(・)∴∵∴∵∴∵<br>　　　　∴∵rミ ,○､：(・)∴∵∴∵<br>　　　∴∵/ 　/　ミ 〉∴∵∵<br>∴∵∴∵| ￣＼　/∴∵∴∵<br>∴∴∴∵∴.､` 　 ∴∵∴∵∴∵<br></button>      
+
+        <button title="It's Defrag-san!" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　[ﾟдﾟ]\n　　　 　/[＿]ヽ\n　　　　 　|　|\n`,'writeBox')">　　　□　　　（ ）　　　<br>　　■　　ヽ[￣]ﾉ<br>　■■□[ﾟдﾟ]■＿◇</button>      
+        <button title="It's Aramaki Scarchinov!" class="selectItem multiLine" onclick="insertThisInThere(`　 _,,..,,,,_\n/ ,' 3　 \`ヽｰっ\nl　　 ⊃　⌒_つ\n\`&apos;ｰ---‐&apos;&apos;&apos;&apos;&apos;&quot;\n`,'writeBox')">　 _,,..,,,,_<br>/ ,' 3　 `ヽｰっ<br>l　　 ⊃　⌒_つ<br>`&apos;ｰ---‐&apos;&apos;&apos;&apos;&apos;&quot;</button>      
+        <button title="It's Zonu!" class="selectItem multiLine" onclick="insertThisInThere(` 　　　 ／￣￣￣￣＼\n　　／　　　　 ●　　●､　　　　　　＿＿＿＿＿\n　　|Y　　Y　　　　　　　 ＼ 　　／　　| |　　 | 　　　　　　 ▼ |　＜ I'm Old！\n　　| ＼／　　　　　　＿人.|　　＼＿＿＿＿＿\n　　|　　　　　　 ＿＿＿ノ\n　　＼　　　 .／\n　　　｜ ｜　|\n　　　（_＿）＿）\n`,'writeBox')"> 　　　 ／￣￣￣￣＼<br>　　／　　　　 ●　　●､　　<br>　　|Y　　Y　　　　　　　 ＼ 　<br>　　| |　　 | 　　　　　　 ▼ |　<br>　　| ＼／　　　　　　＿人.|　<br></button>      
+        <button title="It's Width-40!" class="selectItem multiLine" onclick="insertThisInThere(`　 ●／\n＜■　　 ＜　I'm 27 and still chugging!\n／　 ＞ \n`,'writeBox')">　 ●／<br>＜■　<br> ／ ＞ </button>
+        
+        <button title="It's Biscut-tan!" class="selectItem multiLine" onclick="insertThisInThere(`　 　　　＿＿\n　　　 （し≠=）\n　　　,彡ﾉﾌﾊヾ 　／￣￣￣￣￣\n　 　 <ﾙﾟ ヮﾟﾉゝ <　　I have a lot of friends♪\n　　　 く,.ｿYi,ゝ 　 ＼＿＿＿＿＿\n　　　 丿juul〉\n　　 　 \`'ＪＪ'\n`,'writeBox')">　 　　　＿＿<br>　　　 （し≠=）<br>　　　,彡ﾉﾌﾊヾ <br>　 　 &lt;ﾙﾟ ヮﾟﾉゝ </button>
+        <button title="It's Sea Chicken-tan!" class="selectItem multiLine" onclick="insertThisInThere(`　　　＿＿\n　　 '´　 　 ヽ\n　　ｉ　ﾉﾘﾉ）)）〉\n　　ﾉ｡(ｌ!ﾟ ｰﾟﾉ\n　　ﾉ⊂)水!つ\n　 (（( く/__l〉ﾘ\n　　 ｀｀ し'ﾉ\n`,'writeBox')">　　　＿＿<br>　　 '´　 　 ヽ<br>　　ｉ　ﾉﾘﾉ）)）〉<br>　　ﾉ｡(ｌ!ﾟ ｰﾟﾉ<br></button>
+        <button title="It's Cal-tan!" class="selectItem multiLine" onclick="insertThisInThere(`　　　　＿_\n　　'´　　　ヽ\n　ｌｶﾉﾉﾙ ﾋﾟﾉｽ\n　从ﾀ ﾟ ヮﾟﾉｿ\n　⊂［］二［］つ\n　　 /∴∵ヽ\n　　<∵∴∵>\n　　　（/ ∪\n`,'writeBox')">　　　　＿_<br>　　'´　　　ヽ<br>　ｌｶﾉﾉﾙ ﾋﾟﾉｽ<br>　从ﾀ ﾟ ヮﾟﾉｿ</button>
+        <button title="It's Yakul-tan!" class="selectItem multiLine" onclick="insertThisInThere(`　　　　＿_\n　　'´　　　ヽ\n　ｌﾔﾉﾉｸ　ﾙﾄ）\n　 |iiﾀ ﾟ ヮﾟﾉｿ\n　⊂［二二］つ\n　从　|二|从人\n　　 ［二二］\n　　　（/ ∪\n`,'writeBox')">　　　　＿_<br>　　'´　　　ヽ<br>　ｌﾔﾉﾉｸ　ﾙﾄ）<br>　 |iiﾀ ﾟ ヮﾟﾉｿ</button>
       </div>
       <!-- Page 20 -->
       <div id="page20" class="selectionBoxWide tabcontent" style="display: none;">
-        <button title="The standard form of Gikoneko" class="selectItem multiLine" onclick="insertThisInThere('　　　 ∧ ∧\n～′￣(´ー`)＜text goes here\n　UU￣ U  U','writeBox')">　　　 ∧ ∧<br>～′￣(´ー`)<br>　UU￣ U  U</button>
+        <button class="selectItem">I don't. feel like <br> putting more yet.</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
+        <button title="Naito Horizon" class="selectItem multiLine" onclick="insertThisInThere(`　　　　　 　　　／⌒ヽ\n　　⊂二二二（　＾ω＾）二⊃\n　　　　　　　　|　　　 / 　　　　　　Naito Horizons!\n　　　　 　　　 （　ヽノ\n　　　　　　　　 ﾉ>ノ　\n　　　　 三　　レﾚ\n`,'writeBox')">　　　 　　　／⌒ヽ<br>⊂二二二（　＾ω＾）二⊃<br>　　　　　　|　　　 /<br>　　 　　　 （　ヽノ<br>　　　　　　 ﾉ>ノ　<br>　　　　 　　レﾚ</button>
       </div>
     </div>
     <script>
@@ -1529,7 +1568,14 @@
       console.log(currentPage);
     </script>
     <form id="writeContainer">
-      <textarea id="writeBox"></textarea>
+      <textarea id="writeBox" spellcheck="false">
+        　　 ／V＼
+　　　　　/◎;;;,;,,,,ヽ　　　　／￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+　　＿　ﾑ::::(,,ﾟДﾟ)::|　　＜　Welcome to Bitworse-AA. It's just okay.
+　 ヽﾂ.ヽ::（ﾉ:::.:::::::..|⊃　　＼＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+　　 ヾソ:::::::::::::::::.:ﾉ
+　　　 ｀ ー U'"U ゛
+      </textarea>
     </form>
   </div>
 </body>
